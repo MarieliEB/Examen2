@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-US" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"></meta>
+<meta http-equiv="Content-Type" content="text/html"></meta>
+<title>Workshops</title>
+</head>
+<body>
+	<div>
+		<h1>Lista de categorías</h1>
+		
+		
+			<div th:each="entry : ${categorias}">
+				<table>
+			<tr>
+			  <td><strong>Id</strong></td>
+			  <td><strong>Nombre</strong></td>
+			  <td><strong>Descripcion</strong></td>
+			</tr>
+			
+			<tr>
+			  <td th:text="${entry.id}"></td>
+			  <td th:text="${entry.nombre}"></td>
+			  <td th:text="${entry.descripcion}"></td>
+			</tr>
+		</table>
+			</div>
+		
+		
+		
+
+	</div>
+</body>
+</html>
