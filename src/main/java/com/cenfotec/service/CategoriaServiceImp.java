@@ -2,12 +2,12 @@ package com.cenfotec.service;
 
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 import com.cenfotec.domain.Categoria;
 import com.cenfotec.repo.CategoriaRepository;
 
+@Service
 public class CategoriaServiceImp implements CategoriaService {
 
 	@Autowired
